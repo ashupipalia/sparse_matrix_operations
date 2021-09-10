@@ -9,42 +9,7 @@ I used a compressed sparse row (CSR) for solving the problem.
 I used data structure for storing the row, column, and matrix values stored in Adjacency List form where a row is a vector and each row contains the vector of pairs where each pair is column and value.
 random_gen_matrix() -> this method give random coordinates and and each have random values.
 
-#Sparse Matrix Addition Result:
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Sparse Matrix Multiplication Result:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Sparse Matrix Addition and multiplication Result:
+![image](https://user-images.githubusercontent.com/76839986/132906989-53958067-00eb-44c5-8481-105fec67405f.png)
 
 #Conclusions:
-
-
-
-
-
-
