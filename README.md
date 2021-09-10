@@ -14,3 +14,6 @@ random_gen_matrix() -> this method give random coordinates and and each have ran
 ![image](https://user-images.githubusercontent.com/76839986/132906989-53958067-00eb-44c5-8481-105fec67405f.png)
 
 #Conclusions:
+Space complexity - O(n+m+x+y) -- Here x and y respectively are the total numbers of matrix A and matrix B. 
+time complexity of addition is  - O(n(k)) -- where k <= x+y-x∩y .
+time complexity of multiplication - O(n(p*(k)) -- where k <= x+y-x∩y 
