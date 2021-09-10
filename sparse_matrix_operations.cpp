@@ -228,13 +228,17 @@ void reset(vector<vector<pair<int,int>>> &matrixA,vector<vector<pair<int,int>>> 
     
 }
 
-int main(int argc, char** argv)
+int main(int argc, char* argv[])
 {   
-    n = 1000; 
-    m = 1000;
-    p = 1000;
+    cout<<"enter n value ";
+    cin>>n;
+    cout<<"enter m value ";
+    cin>>m;
+    cout<<"enter p value ";
+    cin>>p;
+    cout<<"enter sp value ";
+    cin>>sp;
     v_size = 30;
-    sp = 0.2;
     vector<vector<pair<int,int>>> matrixA(n);
     vector<vector<pair<int,int>>> matrixB(m);
     vector<vector<pair<int,int>>> addmatrix(n);
@@ -245,24 +249,21 @@ int main(int argc, char** argv)
 
     random_gen_matrix(matrixA,matrixB,transmatrixB);
     
-    
-   /* clock_t start, stop;
-	start = clock();
-	add_matrix(matrixA,matrixB,addmatrix);
-	stop = clock();
-
-    double runtime = double(stop - start)/CLOCKS_PER_SEC;
-	//file_writer << "(" << sp << " -> " << runtime << " seconds)" << endl;
-    cout<<runtime<<" sec";
-    cout<<endl;*/
-    
     clock_t start, stop;
+    start = clock();
+    add_matrix(matrixA,matrixB,addmatrix);
+    stop = clock();
+    double runtime_of_add = double(stop - start)/CLOCKS_PER_SEC;
+     
     start = clock();
     mul_matrix(matrixA,transmatrixB,mulmatrix);
     stop = clock();
-    double runtime = double(stop - start)/CLOCKS_PER_SEC;
-    cout<<runtime<<" sec";
+    double runtime_of_mul = double(stop - start)/CLOCKS_PER_SEC;
 
+    cout<<"matrix A size is "<<n<<" x "<<m<<" sparsity is "<<sp<<endl;
+    cout<<"matrix B size is "<<m<<" x "<<p<<" sparsity is "<<sp<<endl;
+    cout<<"resultant matrix of addition size is "<<n<<" x "<<m<<" sparsity is "<<sp<<" runtime is (in sec) "<<runtime_of_add<<endl;
+    cout<<"resultant matrix of multiplication size is "<<n<<" x "<<p<<" sparsity is "<<sp<<" runtime is (in sec) "<<runtime_of_mul<<endl; 
     //print_input_matrix(matrixA,matrixB);
     //print_addmatrix(addmatrix);
     //print_mulmatrix(mulmatrix);
