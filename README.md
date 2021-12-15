@@ -10,7 +10,7 @@ I used data structure for storing the row, column, and matrix values stored in A
 random_gen_matrix() -> this method give random coordinates and and each have random values.
 Here i took Matrix A is n*m (row - n) (column - m) and Matrix B size is m*p (row-m) (column -p)
 ## Usage
-
+ther two cpp file update version is cs20m004_asgn1.cpp.
 - To compile the program: `g++ -o result cs20m004_asgn1.cpp`
 - To run the program: `./result <size_of_n> <size_of_m> <size_of_n> <sparsity_value(value in between 0 to 1)> [<flag(0 or 1)>]`
 flag vlaue if it is 0 then it will calculate multiplication and flag = 1 then it will calculate addition.
