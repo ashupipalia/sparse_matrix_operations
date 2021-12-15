@@ -12,14 +12,12 @@ Here i took Matrix A is n*m (row - n) (column - m) and Matrix B size is m*p (row
 ## Usage
 
 - To compile the program: `g++ -o result cs20m004_asgn1.cpp`
-- To run the program: `./result <size_of_n> <size_of_m> <size_of_n> <sparsity_value(value in between 0 to 1)>`
-
+- To run the program: `./result <size_of_n> <size_of_m> <size_of_n> <sparsity_value(value in between 0 to 1)> [<flag(0 or 1)>]`
+flag vlaue if it is 0 then it will calculate multiplication and flag = 1 then it will calculate addition.
 
 #Sparse Matrix Addition and multiplication Result:
 
 ![image](https://user-images.githubusercontent.com/76839986/132906989-53958067-00eb-44c5-8481-105fec67405f.png)
 
 #Conclusions:
-Space complexity - O(n+m+x+y) -- Here x and y respectively are the total numbers of matrix A and matrix B. 
-time complexity of addition is  - O(n(k)) -- where k <= x+y-x∩y .
-time complexity of multiplication - O(n(p*(k)) -- where k <= x+y-x∩y 
+
