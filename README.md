@@ -19,5 +19,17 @@ flag vlaue if it is 0 then it will calculate multiplication and flag = 1 then it
 
 ![image](https://user-images.githubusercontent.com/76839986/132906989-53958067-00eb-44c5-8481-105fec67405f.png)
 
+## Results
+two graph i plotted
+1.sparsity vs runtime
+2.sparsity vs number of operations
+
+![Sparsity vs Runtime](Figure_1.png)
+
+![Sparsity vs Total Operations](Figure_2.png)
+
+
+
+
 #Conclusions:
 
