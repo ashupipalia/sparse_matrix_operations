@@ -194,7 +194,7 @@ void print_mulmatrix(vector<vector<pair<int,int>>> &mulmatrix){
     }
 }
 
-double dense_matrix_mul_add(vector<vector<pair<int,int>>> &matrixA,vector<vector<pair<int,int>>> &matrixB,int &count,bool &flag){
+double dense_matrix_mul_add(vector<vector<pair<int,int>>> &matrixA,vector<vector<pair<int,int>>> &matrixB,int *count,bool *flag){
 
     int dens_A[n][m]={0};
     int dens_B[m][p]={0};
@@ -323,7 +323,7 @@ int main(int argc, char* argv[])
         runtime = double(stop - start)/CLOCKS_PER_SEC;
     }
     int count = 0;
-    double runtime_dense = dense_matrix_mul_add(matrixA,matrixB,count,flag);
+    double runtime_dense = dense_matrix_mul_add(matrixA,matrixB,&count,&flag);
 
     cout<<runtime<<","<<opcount<<","<<runtime_dense<<","<<count<<endl;
     //cout<<"matrix A size is "<<n<<" x "<<m<<" sparsity is "<<sp<<endl;
